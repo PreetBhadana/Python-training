@@ -43,3 +43,17 @@ $ python3 --version
 (My output be like - 
 /home/beryl/Desktop/demo projects/Python-training/Python-training/venv/bin/python3
 Python 3.8.10)
+
+
+## To run server -- (with venv activated)
+$ source venv/bin/activate
+$ uvicorn main:app --reload
+
+# My output be like - 
+"""
+INFO:     Will watch for changes in these directories: ['home/beryl/Desktop/demo projects/Python-training/Python-training']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [12345]
+INFO:     Started server process [12346]
+INFO:     Waiting for application startup.
+"""
