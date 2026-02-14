@@ -1,0 +1,45 @@
+First we will see how to setup the python3 in ubuntu --
+
+To Verify Current Setup (on terminal)
+
+$ python3 --version
+$ pip3 --version
+
+## 1st Update System (on terminal)
+
+$ sudo apt update
+$ sudo apt upgrade -y
+
+
+## 2nd Install Python Essentials (on terminal)
+
+$ sudo apt install python3 python3-pip python3-venv python3-dev -y
+(This gets Python 3, pip (package manager), venv (virtual envs), and build tools.)
+
+
+## 3rd Test Installation (on terminal)
+
+$ python3 -c "print('Python ready:', __import__('sys').version)"
+(Output be like -- 
+Python ready: 3.8.10 (default, Mar 18 2025, 20:04:55) 
+[GCC 9.4.0])
+
+
+## 4th Create Training Virtual Environment (on terminal)
+In your python-training folder:
+
+$ cd ~/python-training  # Or wherever you made it
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install --upgrade pip
+(Prompt changes to (venv)—now isolated for practice. Deactivate: deactivate.)
+
+
+## Verify Full Setup (on terminal)
+
+$ which python3  # Should point to venv/bin/python3 when activated
+$ python3 --version
+(These show the Python version in the virtual environment.)
+(My output be like - 
+/home/beryl/Desktop/demo projects/Python-training/Python-training/venv/bin/python3
+Python 3.8.10)
